@@ -7,6 +7,16 @@
 
 }
 
+:root{
+    --background-todoApp: #fff;
+    --backgroundinput:  #edeef0;
+    --backgroundBtn: #70c70d;
+    --backgrounHover: #d54c3a;
+    --primeiraCor:#002765;
+    --segundaCor: #555;
+    --checagem: #48d316;
+}
+
 .container{
     width: 100%;
     min-height: 100vh;
@@ -17,14 +27,14 @@
 .todo-app{
     width: 100%;
     max-width: 540px;
-    background: #fff;
+    background: var(--background-todoApp);
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
 
 .todo-app h2{
-    color: #002765;
+    color: var(--primeiraCor);
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -35,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #edeef0;
+    background: var(--backgroundinput);
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -52,10 +62,10 @@ input{
 
 button{
     border-radius: 40px;
-    background: #70c70d;
+    background: var(--backgroundBtn);
     border: none;
     padding: 16px 40px;
-    color: #edeef0;
+    color: var(--backgroundinput);
     cursor: pointer;
     font-size: 22px;
 }
@@ -84,12 +94,12 @@ ul li::before{
 
 
 .checado{
-    color: #555;
+    color: var(--segundaCor);
     text-decoration: line-through;
 }
 
 .checado::before{
-    background: #48d316;
+    background: var(--checagem);
 }
 
 ul li span{
@@ -99,12 +109,12 @@ ul li span{
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: #555;
+    color: var(--segundaCor);
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
 }
 
 ul li span:hover{
-    background: #d54c3a;
+    background: var(--backgrounHover);
 }
